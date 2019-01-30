@@ -1,4 +1,4 @@
-# Webpack Frontend Starterkit
+# Wem gehört der Boxi?
 
 A lightweight foundation for your next webpack based frontend project.
 
