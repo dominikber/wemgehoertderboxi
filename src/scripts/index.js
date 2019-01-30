@@ -1,5 +1,5 @@
 import 'bootstrap';
-import 'mapbox-gl';
+import mapboxgl from 'mapbox-gl';
 
 import '../styles/index.scss';
 
@@ -9,62 +9,33 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiaGFuc21laWVyMTIzIiwiYSI6ImNqcHR5MzVobDBiMG80M
 
 var map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/mapbox/streets-v9',
-  center: [-0.15591514, 51.51830379],
-  zoom: 15.5,
-  bearing: 27,
-  pitch: 45
+  style: 'mapbox://styles/hansmeier123/cjr6fhtb85mfj2sjxxrjd06um',
+  center: [13.459574, 52.510934],
+  zoom: 17,
+  bearing: 0,
+  pitch: 30
 });
 
 var chapters = {
-  'baker': {
-    bearing: 27,
-    center: [-0.15591514, 51.51830379],
-    zoom: 15.5,
-    pitch: 20
+  'boxi': {
+    bearing: 0,
+    center: [13.459474, 52.510534],
+    zoom: 17,
+    pitch: 30
   },
-  'aldgate': {
+  'boxifern': {
     duration: 6000,
-    center: [-0.07571203, 51.51424049],
-    bearing: 150,
-    zoom: 15,
-    pitch: 0
+    center: [13.455374, 52.510885],
+    bearing: 0,
+    zoom: 16,
+    pitch: 10
   },
-  'london-bridge': {
-    bearing: 90,
-    center: [-0.08533793, 51.50438536],
+  'berlin': {
+    duration: 6000,
+    center: [13.445701, 52.508792],
+    bearing: 0,
     zoom: 13,
-    speed: 0.6,
-    pitch: 40
-  },
-  'woolwich': {
-    bearing: 90,
-    center: [0.05991101, 51.48752939],
-    zoom: 12.3
-  },
-  'gloucester': {
-    bearing: 45,
-    center: [-0.18335806, 51.49439521],
-    zoom: 15.3,
-    pitch: 20,
-    speed: 0.5
-  },
-  'caulfield-gardens': {
-    bearing: 180,
-    center: [-0.19684993, 51.5033856],
-    zoom: 12.3
-  },
-  'telegraph': {
-    bearing: 90,
-    center: [-0.10669358, 51.51433123],
-    zoom: 17.3,
-    pitch: 40
-  },
-  'charing-cross': {
-    bearing: 90,
-    center: [-0.12416858, 51.50779757],
-    zoom: 14.3,
-    pitch: 20
+    pitch: 0
   }
 };
 
@@ -80,7 +51,7 @@ window.onscroll = function() {
   }
 };
 
-var activeChapterName = 'baker';
+var activeChapterName = 'boxi';
 
 function setActiveChapter(chapterName) {
   if (chapterName === activeChapterName) return;
