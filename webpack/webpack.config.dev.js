@@ -18,8 +18,7 @@ module.exports = merge(common, {
     })
   ],
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.(js)$/,
         include: Path.resolve(__dirname, '../src'),
         enforce: 'pre',
