@@ -1,29 +1,45 @@
-body { margin:0; padding:0; }
-#map { position:absolute; top:0; bottom:0; width:100%; }
+body {
+  margin: 0;
+  padding: 0;
+}
 
 #map {
-position: fixed;
-width:100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
 }
-#features {
-width: 50%;
-font-family: sans-serif;
-overflow-y: scroll;
-background-color: srgb(255,255,255,0.2);
-position: absolute;
+
+#scroll {
+  width: 50%;
+  font-family: sans-serif;
+  background-color: rgba(255,255,255,0.5);
+  position: absolute;
+  z-index: 2;
 }
+
 section {
-padding:  25px 50px;
-line-height: 25px;
-border-bottom: 1px solid #ddd;
-opacity: 0.25;
-font-size: 13px;
-height: 800px;
+  padding: 25px 50px;
+  line-height: 25px;
+  border-bottom: 1px solid #ddd;
+  opacity: 0.25;
+  font-size: 13px;
 }
-section.active {
-opacity: 1;
+
+.step_content {
+  padding: 5%;
 }
+
+section.is-active {
+  opacity: 1;
+}
+
 section:last-child {
-border-bottom: none;
-margin-bottom: 200px;
+  border-bottom: none;
+  margin-bottom: 200px;
+}
+
+.mapboxgl-ctrl-logo {
+  display: none !important;
 }
