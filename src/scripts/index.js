@@ -1,5 +1,7 @@
 import 'bootstrap';
 import mapboxgl from 'mapbox-gl';
+import 'intersection-observer';
+import scrollama from 'scrollama';
 
 import '../styles/index.scss';
 
@@ -43,33 +45,52 @@ var chapters = {
   }
 };
 
-// On every scroll event, check which element is on screen
-window.onscroll = function() {
-  var chapterNames = Object.keys(chapters);
-  for (var i = 0; i < chapterNames.length; i++) {
-    var chapterName = chapterNames[i];
-    if (isElementOnScreen(chapterName)) {
-      setActiveChapter(chapterName);
-      break;
-    }
-  }
-};
+var container = document.querySelector('#scroll');
+var text = container.querySelector('.scroll__text');
+var steps = text.querySelectorAll('.step');
 
-var activeChapterName = 'boxi';
+// initialize the scrollama
+var scroller = scrollama();
 
-function setActiveChapter(chapterName) {
-  if (chapterName === activeChapterName) return;
-
-  map.flyTo(chapters[chapterName]);
-
-  document.getElementById(chapterName).setAttribute('class', 'active');
-  document.getElementById(activeChapterName).setAttribute('class', '');
-
-  activeChapterName = chapterName;
+// scrollama event handlers
+function handleStepEnter(response) {
+  // response = { element, direction, index }
+  // console.log(response);
+  // add to color to current step
+  response.element.classList.add('is-active');
+  var stepData = response.element.getAttribute('data-step');
+  console.log(stepData);
+  map.flyTo(chapters[stepData]);
 }
 
-function isElementOnScreen(id) {
-  var element = document.getElementById(id);
-  var bounds = element.getBoundingClientRect();
-  return bounds.top < window.innerHeight && bounds.bottom > 0;
+function handleStepExit(response) {
+  // response = { element, direction, index }
+  // console.log(response);
+  // remove color from current step
+  response.element.classList.remove('is-active');
 }
+
+function init() {
+  // set random padding for different step heights (not required)
+  steps.forEach(function(step) {
+    var v = 100 + Math.floor(Math.random() * window.innerHeight / 4);
+    step.style.padding = v + 'px 0px';
+  });
+
+  // 1. setup the scroller with the bare-bones options
+  // this will also initialize trigger observations
+  // 3. bind scrollama event handlers (this can be chained like below)
+  scroller.setup({
+      step: '.scroll__text .step',
+      offset: '0.5',
+      debug: true,
+    })
+    .onStepEnter(handleStepEnter)
+    .onStepExit(handleStepExit);
+
+  // setup resize event
+  window.addEventListener('resize', scroller.resize);
+}
+
+// kick things off
+init();

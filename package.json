@@ -53,6 +53,8 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
-    "npm": "^6.7.0"
+    "intersection-observer": "^0.5.1",
+    "npm": "^6.7.0",
+    "scrollama": "^1.4.4"
   }
 }
