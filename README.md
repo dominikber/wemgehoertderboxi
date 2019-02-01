@@ -1,6 +1,40 @@
 # Wem gehört der Boxi?
 
-A lightweight foundation for your next webpack based frontend project.
+Libaries used:
+
+Bootstrap 4
+https://github.com/russellgoldenberg/scrollama#scrollamajs
+Mapbox 0.52.0
+
+
+
+## Prerequisites on local computer
+
+install node js:
+https://nodejs.org/en/
+
+install git:
+https://git-scm.com/
+
+install code editor like atom or sublime:
+https://www.sublimetext.com/
+
+download this repository:
+
+```
+git clone LINKTOTHISPAGE
+```
+
+to edit files open directory in terminal:
+
+type "cd" and then drag folder inside and hit enter
+
+then type:
+```
+sublime .
+```
+
+and hit enter again
 
 
 ### Installation
@@ -20,6 +54,11 @@ npm start
 ```
 npm run build
 ```
+
+this file will create a static version that works without all this inside a new order "build".
+these files can be uploaded to a webserver via ftp and used.
+They dont work offline.
+
 
 ### Features:
 

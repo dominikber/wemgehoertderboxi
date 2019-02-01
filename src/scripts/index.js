@@ -3,7 +3,10 @@ import mapboxgl from 'mapbox-gl';
 
 import '../styles/index.scss';
 
-console.log('webpack starterkit');
+import 'intersection-observer';
+import scrollama from 'scrollama';
+
+console.log('start index.js');
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiaGFuc21laWVyMTIzIiwiYSI6ImNqcHR5MzVobDBiMG80MmxnNzdma2QyOHcifQ.JKBv5J8QEWsFP-dJpouBkQ';
 
@@ -13,7 +16,8 @@ var map = new mapboxgl.Map({
   center: [13.459574, 52.510934],
   zoom: 17,
   bearing: 0,
-  pitch: 30
+  pitch: 30,
+  attributionControl: false
 });
 
 var chapters = {

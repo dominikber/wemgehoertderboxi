@@ -18,10 +18,13 @@ module.exports = {
     }
   },
   plugins: [
-    new CleanWebpackPlugin(['build'], { root: Path.resolve(__dirname, '..') }),
-    new CopyWebpackPlugin([
-      { from: Path.resolve(__dirname, '../public'), to: 'public' }
-    ]),
+    new CleanWebpackPlugin(['build'], {
+      root: Path.resolve(__dirname, '..')
+    }),
+    new CopyWebpackPlugin([{
+      from: Path.resolve(__dirname, '../public'),
+      to: 'public'
+    }]),
     new HtmlWebpackPlugin({
       template: Path.resolve(__dirname, '../src/index.html')
     })
@@ -32,8 +35,7 @@ module.exports = {
     }
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.mjs$/,
         include: /node_modules/,
         type: 'javascript/auto'

@@ -47,7 +47,9 @@
     "bootstrap": "^4.0.0",
     "mapbox-gl": "^0.52.0",
     "jquery": "*",
-    "popper.js": "*"
+    "popper.js": "*",
+    "scrollama": "*",
+    "intersection-observer": "*"
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
