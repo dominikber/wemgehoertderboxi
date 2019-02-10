@@ -3,28 +3,29 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiaGFuc21laWVyMTIzIiwiYSI6ImNqcHR5MzVobDBiMG80M
 var map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/hansmeier123/cjr6fhtb85mfj2sjxxrjd06um',
-  center: [13.459574, 52.510934],
-  zoom: 17,
+  center: [13.445701, 52.508792],
   bearing: 0,
-  pitch: 30
+  zoom: 13,
+  pitch: 0
 });
 
 var chapters = {
   'boxi': {
     bearing: 0,
+    duration: 4000,
     center: [13.459474, 52.510534],
     zoom: 17,
     pitch: 30
   },
   'boxifern': {
-    duration: 6000,
+    duration: 4000,
     center: [13.455374, 52.510885],
     bearing: 0,
     zoom: 16,
     pitch: 10
   },
   'berlin': {
-    duration: 6000,
+    duration: 4000,
     center: [13.445701, 52.508792],
     bearing: 0,
     zoom: 13,

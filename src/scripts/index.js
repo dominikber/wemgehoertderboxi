@@ -2,8 +2,9 @@ import 'bootstrap';
 import mapboxgl from 'mapbox-gl';
 import 'intersection-observer';
 import scrollama from 'scrollama';
-
 import '../styles/index.scss';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel';
 
 console.log('start index.js');
 
@@ -19,28 +20,7 @@ var map = new mapboxgl.Map({
   attributionControl: false
 });
 
-var chapters = {
-  'boxi': {
-    bearing: 0,
-    center: [13.459474, 52.510534],
-    zoom: 17,
-    pitch: 30
-  },
-  'boxifern': {
-    duration: 6000,
-    center: [13.455374, 52.510885],
-    bearing: 0,
-    zoom: 16,
-    pitch: 10
-  },
-  'berlin': {
-    duration: 6000,
-    center: [13.445701, 52.508792],
-    bearing: 0,
-    zoom: 13,
-    pitch: 0
-  }
-};
+var chapters = require('./chapters.js');
 
 var container = document.querySelector('#scroll');
 var text = container.querySelector('.scroll__text');
@@ -80,7 +60,7 @@ function init() {
   scroller.setup({
       step: '.scroll__text .step',
       offset: '0.5',
-      debug: true,
+      debug: false,
     })
     .onStepEnter(handleStepEnter)
     .onStepExit(handleStepExit);
@@ -91,3 +71,13 @@ function init() {
 
 // kick things off
 init();
+
+$(document).ready(function() {
+  $(".owl-carousel").owlCarousel({
+    items: 3,
+    lazyLoad: true,
+    nav: true,
+    margin: 10,
+    center: true
+  });
+});

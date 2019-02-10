@@ -22,9 +22,14 @@ module.exports = {
       root: Path.resolve(__dirname, '..')
     }),
     new CopyWebpackPlugin([{
-      from: Path.resolve(__dirname, '../public'),
-      to: 'public'
-    }]),
+        from: Path.resolve(__dirname, '../public'),
+        to: 'public'
+      },
+      {
+        from: Path.resolve(__dirname, '../src/static'),
+        to: 'static'
+      }
+    ]),
     new HtmlWebpackPlugin({
       template: Path.resolve(__dirname, '../src/index.html')
     })
