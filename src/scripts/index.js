@@ -77,7 +77,6 @@ $(document).ready(function() {
     items: 3,
     lazyLoad: true,
     nav: true,
-    margin: 10,
-    center: true
+    margin: 10
   });
 });
