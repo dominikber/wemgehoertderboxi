@@ -29,8 +29,6 @@
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
     "babel-loader": "^8.0.4",
-    "jquery": "*",
-    "bootstrap": "^4.0.0",
     "clean-webpack-plugin": "^0.1.19",
     "copy-webpack-plugin": "^4.5.4",
     "css-loader": "^1.0.0",
@@ -38,17 +36,13 @@
     "eslint-loader": "^2.1.1",
     "file-loader": "^2.0.0",
     "html-webpack-plugin": "^4.0.0-beta.2",
-    "intersection-observer": "*",
-    "mapbox-gl": "^0.52.0",
     "mini-css-extract-plugin": "^0.4.4",
     "node-sass": "^4.9.4",
     "popper.js": "*",
     "sass-loader": "^7.1.0",
-    "scrollama": "*",
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
     "webpack": "^4.21.0",
-    "owl.carousel": "^2.3.4",
     "webpack-cli": "^3.1.2",
     "gasparesganga-jquery-loading-overlay": "^2.1.6",
     "webpack-dev-server": "^3.1.9",
@@ -56,6 +50,12 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
-    "npm": "^6.7.0"
+    "npm": "^6.7.0",
+    "owl.carousel": "^2.3.4",
+    "scrollama": "*",
+    "intersection-observer": "*",
+    "mapbox-gl": "^0.52.0",
+    "jquery": "*",
+    "bootstrap": "^4.0.0"
   }
 }
