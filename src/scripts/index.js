@@ -1,4 +1,3 @@
-import 'jquery';
 import 'bootstrap';
 import mapboxgl from 'mapbox-gl';
 import 'intersection-observer';
@@ -7,6 +6,7 @@ import '../styles/index.scss';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel';
 import 'gasparesganga-jquery-loading-overlay';
+import 'jquery';
 
 console.log('Wem gehört der Boxi!');
 
