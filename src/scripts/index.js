@@ -5,8 +5,11 @@ import scrollama from 'scrollama';
 import '../styles/index.scss';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel';
+import 'gasparesganga-jquery-loading-overlay';
 
-console.log('start index.js');
+console.log('Wem gehört der Boxi!');
+
+$.LoadingOverlay("show");
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiaGFuc21laWVyMTIzIiwiYSI6ImNqcHR5MzVobDBiMG80MmxnNzdma2QyOHcifQ.JKBv5J8QEWsFP-dJpouBkQ';
 
@@ -32,11 +35,9 @@ var scroller = scrollama();
 // scrollama event handlers
 function handleStepEnter(response) {
   // response = { element, direction, index }
-  // console.log(response);
   // add to color to current step
   response.element.classList.add('is-active');
   var stepData = response.element.getAttribute('data-step');
-  console.log(stepData);
   map.flyTo(chapters[stepData]);
 }
 
@@ -49,11 +50,6 @@ function handleStepExit(response) {
 
 function init() {
   // set random padding for different step heights (not required)
-  steps.forEach(function(step) {
-    var v = 100 + Math.floor(Math.random() * window.innerHeight / 4);
-    step.style.padding = v + 'px 0px';
-  });
-
   // 1. setup the scroller with the bare-bones options
   // this will also initialize trigger observations
   // 3. bind scrollama event handlers (this can be chained like below)
@@ -68,9 +64,18 @@ function init() {
   // setup resize event
   window.addEventListener('resize', scroller.resize);
 }
-
 // kick things off
 init();
+
+$(window).on("resize", function() {
+
+  // padding of steps on resizing
+
+  steps.forEach(function(step) {
+    var v = window.innerHeight / 4;
+    step.style.padding = v + 'px 0px';
+  });
+}).resize();
 
 $(document).ready(function() {
   $(".owl-carousel").owlCarousel({
@@ -79,4 +84,9 @@ $(document).ready(function() {
     nav: true,
     margin: 10
   });
+});
+
+$(window).on("load", function() {
+  // executes when complete page is fully loaded, including all frames, objects and images
+  $.LoadingOverlay("hide");
 });

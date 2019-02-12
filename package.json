@@ -4,7 +4,7 @@
   "description": "A light foundation for your next frontend project based on webpack.",
   "scripts": {
     "build": "webpack --config webpack/webpack.config.prod.js  --colors",
-    "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js"
+    "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js --host 0.0.0.0"
   },
   "repository": {
     "type": "git",
@@ -50,13 +50,12 @@
     "webpack": "^4.21.0",
     "owl.carousel": "^2.3.4",
     "webpack-cli": "^3.1.2",
+    "gasparesganga-jquery-loading-overlay": "^2.1.6",
     "webpack-dev-server": "^3.1.9",
     "webpack-merge": "^4.1.4"
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
-    "intersection-observer": "^0.5.1",
-    "npm": "^6.7.0",
-    "scrollama": "^1.4.4"
+    "npm": "^6.7.0"
   }
 }

@@ -28,8 +28,12 @@ section {
   font-size: 13px;
 }
 
+.step {
+  transition: padding 0.5s ease;
+}
+
 .step_content {
-  padding: 2%;
+  padding: 4%;
   width: 50%;
   border-bottom: 1px solid #ddd;
   background-color: rgba(255,255,255,1);
@@ -51,3 +55,11 @@ section:last-child {
 .mapboxgl-ctrl-logo {
   display: none !important;
 }
+@media all and (max-width: 1199px) {}
+@media all and (max-width: 991px) {
+  .step_content {
+    width: 100%;
+  }
+}
+@media all and (max-width: 768px) {}
+@media all and (max-width: 575px) {}
