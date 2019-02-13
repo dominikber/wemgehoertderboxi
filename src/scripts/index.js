@@ -52,6 +52,15 @@ function handleStepEnter(response) {
     map.setLayoutProperty('popularTimes', 'visibility', 'none');
   }
 
+  if (response.element.id === 'boxifern') {
+
+    map.setLayoutProperty('padovicz-owning-now', 'visibility', 'visible');
+
+  } else {
+    map.setLayoutProperty('padovicz-owning-now', 'visibility', 'none');
+  }
+
+
 }
 
 
