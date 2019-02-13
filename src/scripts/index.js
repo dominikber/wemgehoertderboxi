@@ -7,24 +7,20 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel';
 import 'gasparesganga-jquery-loading-overlay';
 import 'jquery';
-
+import './carousel.js';
+import {
+  map
+} from './mapboxConfig.js';
+import {
+  positions,
+  addPopularTimesLayer,
+  updatePopularTimesMarkers,
+  removePopularTimesLayer
+} from './chapters.js';
 console.log('Wem gehört der Boxi!');
 
 $.LoadingOverlay("show");
 
-mapboxgl.accessToken = 'pk.eyJ1IjoiaGFuc21laWVyMTIzIiwiYSI6ImNqcHR5MzVobDBiMG80MmxnNzdma2QyOHcifQ.JKBv5J8QEWsFP-dJpouBkQ';
-
-var map = new mapboxgl.Map({
-  container: 'map',
-  style: 'mapbox://styles/hansmeier123/cjr6fhtb85mfj2sjxxrjd06um',
-  center: [13.459574, 52.510934],
-  zoom: 17,
-  bearing: 0,
-  pitch: 30,
-  attributionControl: false
-});
-
-var chapters = require('./chapters.js');
 
 var container = document.querySelector('#scroll');
 var text = container.querySelector('.scroll__text');
@@ -33,33 +29,53 @@ var steps = text.querySelectorAll('.step');
 // initialize the scrollama
 var scroller = scrollama();
 
+
+addPopularTimesLayer(map);
+
+// Layer toggler
+
+
+
 // scrollama event handlers
 function handleStepEnter(response) {
   // response = { element, direction, index }
   // add to color to current step
   response.element.classList.add('is-active');
   var stepData = response.element.getAttribute('data-step');
-  map.flyTo(chapters[stepData]);
+  map.flyTo(positions[stepData]);
+
+  if (response.element.id === 'boxi') {
+
+    map.setLayoutProperty('popularTimes', 'visibility', 'visible');
+
+  } else {
+    map.setLayoutProperty('popularTimes', 'visibility', 'none');
+  }
+
+}
+
+
+
+
+function handleStepProgress(progress) {
+  let stepProgress = progress.progress;
+  updatePopularTimesMarkers(map, stepProgress);
 }
 
 function handleStepExit(response) {
   // response = { element, direction, index }
-  // console.log(response);
-  // remove color from current step
   response.element.classList.remove('is-active');
 }
 
 function init() {
-  // set random padding for different step heights (not required)
-  // 1. setup the scroller with the bare-bones options
-  // this will also initialize trigger observations
-  // 3. bind scrollama event handlers (this can be chained like below)
   scroller.setup({
       step: '.scroll__text .step',
       offset: '0.5',
       debug: false,
+      progress: true
     })
     .onStepEnter(handleStepEnter)
+    .onStepProgress(handleStepProgress)
     .onStepExit(handleStepExit);
 
   // setup resize event
@@ -68,24 +84,14 @@ function init() {
 // kick things off
 init();
 
-$(window).on("resize", function() {
+$(window).on("load", function() {
 
   // padding of steps on resizing
-
   steps.forEach(function(step) {
     var v = window.innerHeight / 4;
     step.style.padding = v + 'px 0px';
   });
 }).resize();
-
-$(document).ready(function() {
-  $(".owl-carousel").owlCarousel({
-    items: 3,
-    lazyLoad: true,
-    nav: true,
-    margin: 10
-  });
-});
 
 $(window).on("load", function() {
   // executes when complete page is fully loaded, including all frames, objects and images
