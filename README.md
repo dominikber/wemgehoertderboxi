@@ -67,17 +67,15 @@ nachdem änderungen gemacht wurden:
 git add .
 ```
 dann commite mit kommentar:
+
 ```
 git commit -m "WAS HAST DU GEMACH"
 ```
+
 Hochladen zu git hub:
-```
-dann commite mit kommentar:
 ```
 git push
 ```
-
-
 
 ### Features:
 
