@@ -3,7 +3,7 @@ $copytext-font: 'ff-real-text-pro, sans-serif;'; **/
 $darkcolor: rgba(0, 0, 0, 1);
 $featurecolor: #ffb300;
 $headline-font: 'Barlow', sans-serif;
-$copytext-font: 'Roboto Slab', serif;
+$copytext-font: 'Poppins', serif;
 $bold-font: 900;
 
 body,
@@ -13,8 +13,8 @@ html {
   width: 100%;
   height: 100%;
   font-family: $copytext-font;
-  font-size: 1.08rem;
-  line-height: 1.1rem;
+  font-size: 1.05rem;
+  line-height: 1.8rem;
 }
 
 h1,
@@ -23,6 +23,15 @@ h3 {
   text-transform: uppercase;
   font-weight: $bold-font;
   font-family: $headline-font;
+}
+
+h2 {
+  padding-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+h3 {
+  padding-bottom: 1rem;
 }
 
 .display-3 {
@@ -34,9 +43,10 @@ h3 {
 
 .lead {
   color: #fff;
-  padding-top: 2%;
+  padding-top: 4%;
   max-width: 750px;
-  font-family: $headline-font;
+  font-family: $copytext-font;
+  line-height: 1.8rem;
 }
 
 .marker {
@@ -49,7 +59,7 @@ h3 {
 }
 
 .navbar {
-  padding: 1rem 1.2rem;
+  padding: 1.2rem;
   background: #fff;
 }
 
@@ -88,23 +98,23 @@ h3 {
   width: 100%;
 }
 
-section {
-  padding: 7% 4%;
-  line-height: 25px;
+.step {
+  transition: padding 0.5s ease;
+  padding: 6% 2.5%;
   transition: opacity 0.3 ease;
-  width: 40%;
+  width: 35%;
   background-color: rgba(255,255,255,1);
 }
 
-.step {
-  transition: padding 0.5s ease;
+.plainstep {
+  padding: 6% 0;
 }
 
 .step_content {
   z-index: 4;
 }
 
-.step.fullwidth {
+.fullwidth {
   width: 100%;
   background-color: #fff;
 }
@@ -112,11 +122,18 @@ section {
 .intro {
   max-width: 70%;
   background-color: none;
-  padding: 12% 0;
+  padding: 10% 0;
+  margin-top: 87px;
 }
 
 .container {
   max-width: 875px;
+}
+
+.historyImage {
+  margin-left: 150px;
+  padding-bottom: 30px;
+  height: 300px;
 }
 
 section.is-active {
@@ -142,21 +159,23 @@ section:last-child {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   color: $featurecolor;
   position: absolute;
-  left: 25px;
+  margin-left: -35px;
   text-transform: uppercase;
-  font-weight: bold;
-  font-size: 35px;
+  font-weight: $bold-font;
+  font-size: 3rem;
+  font-family: $headline-font;
   /** z-index: -1; */
+  margin-top: -95px;
 }
 @media all and (max-width: 1199px) {}
 @media all and (max-width: 991px) {
   .step_content {
     width: 100%;
   }
-}
 
-.section {
-  width: 100%;
+  .step {
+    width: 100%;
+  }
 }
 @media all and (max-width: 768px) {}
 @media all and (max-width: 575px) {}
