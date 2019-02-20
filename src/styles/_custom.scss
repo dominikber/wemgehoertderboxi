@@ -2,9 +2,9 @@
 $copytext-font: 'ff-real-text-pro, sans-serif;'; **/
 $darkcolor: rgba(0, 0, 0, 1);
 $featurecolor: #ffb300;
-$headline-font: 'Lato', sans-serif;
+$headline-font: 'Barlow', sans-serif;
 $copytext-font: 'Roboto Slab', serif;
-$bold-font: 700;
+$bold-font: 900;
 
 body,
 html {
@@ -13,8 +13,8 @@ html {
   width: 100%;
   height: 100%;
   font-family: $copytext-font;
-  font-size: 1rem;
-  line-height: 1.08rem;
+  font-size: 1.08rem;
+  line-height: 1.1rem;
 }
 
 h1,
@@ -28,6 +28,7 @@ h3 {
 .display-3 {
   font-weight: bold;
   color: #fff;
+  font-size: 4rem;
   line-height: 4.5rem;
 }
 
