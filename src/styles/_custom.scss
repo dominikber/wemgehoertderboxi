@@ -1,11 +1,41 @@
 /** $headline-font: 'ff-real-headline-pro, sans-serif;';
 $copytext-font: 'ff-real-text-pro, sans-serif;'; **/
+$darkcolor: rgba(0, 0, 0, 1);
+$featurecolor: #ffb300;
+$headline-font: 'Lato', sans-serif;
+$copytext-font: 'Roboto Slab', serif;
+$bold-font: 700;
+
 body,
 html {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
+  font-family: $copytext-font;
+  font-size: 1rem;
+  line-height: 1.08rem;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  font-weight: $bold-font;
+  font-family: $headline-font;
+}
+
+.display-3 {
+  font-weight: bold;
+  color: #fff;
+  line-height: 4.5rem;
+}
+
+.lead {
+  color: #fff;
+  padding-top: 2%;
+  max-width: 750px;
+  font-family: $headline-font;
 }
 
 .marker {
@@ -17,27 +47,52 @@ html {
   cursor: pointer;
 }
 
+.navbar {
+  padding: 1rem 1.2rem;
+  background: #fff;
+}
+
+.navbar-brand {
+  font-family: $headline-font;
+  text-transform: uppercase;
+  font-weight: $bold-font;
+}
+
+.nav-item {
+  color: $darkcolor;
+  font-family: $headline-font;
+
+  a {
+    text-transform: uppercase;
+  }
+
+  a.nav-link:focus,
+  a.nav-link:hover {
+    color: $featurecolor !important;
+  }
+}
+
 #map {
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 100%;
+  right: 0;
+  width: 75%;
   z-index: 1;
 }
 
 #scroll {
-  font-family: sans-serif;
   position: absolute;
   z-index: 2;
   width: 100%;
 }
 
 section {
-  padding: 25px 50px;
+  padding: 7% 4%;
   line-height: 25px;
-  opacity: 0.25;
-  font-size: 13px;
   transition: opacity 0.3 ease;
+  width: 40%;
+  background-color: rgba(255,255,255,1);
 }
 
 .step {
@@ -45,19 +100,28 @@ section {
 }
 
 .step_content {
-  padding: 4%;
-  width: 50%;
-  /** background-color: rgba(255,255,255,1); */
+  z-index: 4;
 }
 
-.step_content.fullwidth {
+.step.fullwidth {
   width: 100%;
   background-color: #fff;
+}
+
+.intro {
+  max-width: 70%;
+  background-color: none;
+  padding: 12% 0;
+}
+
+.container {
+  max-width: 875px;
 }
 
 section.is-active {
   opacity: 1;
   transition: opacity 0.3 ease;
+  background-color: rgba(255,255,255,1);
 }
 
 section:last-child {
@@ -68,11 +132,30 @@ section:last-child {
 .mapboxgl-ctrl-logo {
   display: none !important;
 }
+
+.rotate {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  color: $featurecolor;
+  position: absolute;
+  left: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 35px;
+  /** z-index: -1; */
+}
 @media all and (max-width: 1199px) {}
 @media all and (max-width: 991px) {
   .step_content {
     width: 100%;
   }
+}
+
+.section {
+  width: 100%;
 }
 @media all and (max-width: 768px) {}
 @media all and (max-width: 575px) {}

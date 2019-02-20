@@ -1,3 +1,6 @@
+import 'gasparesganga-jquery-loading-overlay';
+$.LoadingOverlay("show");
+
 import 'bootstrap';
 import mapboxgl from 'mapbox-gl';
 import 'intersection-observer';
@@ -5,9 +8,9 @@ import scrollama from 'scrollama';
 import '../styles/index.scss';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel';
-import 'gasparesganga-jquery-loading-overlay';
 import 'jquery';
 import './carousel.js';
+import 'bootstrap-autohidingnavbar';
 import {
   map
 } from './mapboxConfig.js';
@@ -19,7 +22,7 @@ import {
 } from './chapters.js';
 console.log('Wem gehört der Boxi!');
 
-$.LoadingOverlay("show");
+
 
 
 var container = document.querySelector('#scroll');
@@ -30,7 +33,7 @@ var steps = text.querySelectorAll('.step');
 var scroller = scrollama();
 
 
-addPopularTimesLayer(map);
+// addPopularTimesLayer(map);
 
 // Layer toggler
 
@@ -44,22 +47,16 @@ function handleStepEnter(response) {
   var stepData = response.element.getAttribute('data-step');
   map.flyTo(positions[stepData]);
 
-  if (response.element.id === 'boxi') {
+  // if (response.element.id === 'boxi') {
+  //
+  //   map.setLayoutProperty('popularTimes', 'visibility', 'visible');
+  //
+  // } else {
+  //   map.setLayoutProperty('popularTimes', 'visibility', 'none');
+  // }
 
-    map.setLayoutProperty('popularTimes', 'visibility', 'visible');
 
-  } else {
-    map.setLayoutProperty('popularTimes', 'visibility', 'none');
-  }
-
-  if (response.element.id === 'boxifern') {
-
-    map.setLayoutProperty('padovicz-owning-now', 'visibility', 'visible');
-
-  } else {
-    map.setLayoutProperty('padovicz-owning-now', 'visibility', 'none');
-  }
-
+  map.setLayoutProperty(stepData, 'visibility', 'visible');
 
 }
 
@@ -68,12 +65,14 @@ function handleStepEnter(response) {
 
 function handleStepProgress(progress) {
   let stepProgress = progress.progress;
-  updatePopularTimesMarkers(map, stepProgress);
+  // updatePopularTimesMarkers(map, stepProgress);
 }
 
 function handleStepExit(response) {
   // response = { element, direction, index }
   response.element.classList.remove('is-active');
+
+  map.setLayoutProperty(response.element.getAttribute('data-step'), 'visibility', 'none');
 }
 
 function init() {
@@ -93,16 +92,20 @@ function init() {
 // kick things off
 init();
 
-$(window).on("load", function() {
+// $(window).on("load", function() {
+//
+//   // padding of steps on resizing
+//   steps.forEach(function(step) {
+//     var v = window.innerHeight / 6;
+//     step.style.padding = v + 'px 0px';
+//   });
+// }).resize();
 
-  // padding of steps on resizing
-  steps.forEach(function(step) {
-    var v = window.innerHeight / 4;
-    step.style.padding = v + 'px 0px';
-  });
-}).resize();
+$.LoadingOverlay("hide");
+$("#mainnav").autoHidingNavbar({
+  // see next for specifications
+});
 
 $(window).on("load", function() {
   // executes when complete page is fully loaded, including all frames, objects and images
-  $.LoadingOverlay("hide");
 });

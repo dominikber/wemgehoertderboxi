@@ -19,6 +19,27 @@ let positions = {
     bearing: 0,
     zoom: 13,
     pitch: 0
+  },
+  'ddr-map': {
+    duration: 3000,
+    bearing: 0,
+    center: [13.459, 52.511],
+    zoom: 14,
+    pitch: 0
+  },
+  'vorwerk-boxhagen': {
+    duration: 3000,
+    center: [13.468, 52.508],
+    bearing: 0,
+    zoom: 15,
+    pitch: 0
+  },
+  'straubemap': {
+    duration: 3000,
+    center: [13.460, 52.511],
+    bearing: 0,
+    zoom: 16,
+    pitch: 0
   }
 };
 
