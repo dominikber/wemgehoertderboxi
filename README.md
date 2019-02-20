@@ -59,6 +59,23 @@ this file will create a static version that works without all this inside a new 
 these files can be uploaded to a webserver via ftp and used.
 They dont work offline.
 
+### Git Hub commands:
+
+nachdem änderungen gemacht wurden:
+
+```
+git add .
+```
+dann commite mit kommentar:
+
+```
+git commit -m "WAS HAST DU GEMACH"
+```
+
+Hochladen zu git hub:
+```
+git push
+```
 
 ### Features:
 
