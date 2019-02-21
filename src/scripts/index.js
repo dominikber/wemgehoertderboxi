@@ -32,6 +32,7 @@ var scroller = scrollama();
 
 let fotoLayers = ["straubemap", "vorwerk-boxhagen", "ddr-map"];
 let mapLayers = ["world"];
+let initLayer = "vorwerk-boxhagen";
 
 // addPopularTimesLayer(map);
 
@@ -82,6 +83,8 @@ function init() {
 
   // setup resize event
   window.addEventListener('resize', scroller.resize);
+
+  toggleLayerTo("vorwerg-boxhagen", 1);
 }
 // kick things off
 init();
