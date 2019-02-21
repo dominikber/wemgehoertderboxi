@@ -23,8 +23,6 @@ import {
 console.log('Wem gehört der Boxi!');
 
 
-
-
 var container = document.querySelector('#scroll');
 var text = container.querySelector('.scroll__text');
 var steps = text.querySelectorAll('.step');
@@ -32,47 +30,43 @@ var steps = text.querySelectorAll('.step');
 // initialize the scrollama
 var scroller = scrollama();
 
+let fotoLayers = ["straubemap", "vorwerk-boxhagen", "ddr-map"];
+let mapLayers = ["world"];
 
 // addPopularTimesLayer(map);
 
-// Layer toggler
+function toggleLayerTo(layerName, opacity) {
+  if (mapLayers.includes(layerName)) {
+    map.setPaintProperty(layerName, 'fill-opacity', opacity);
+  } else if (fotoLayers.includes(layerName)) {
+    map.setPaintProperty(layerName, 'raster-opacity', opacity);
+  }
+};
 
-
-
-// scrollama event handlers
 function handleStepEnter(response) {
-  // response = { element, direction, index }
-  // add to color to current step
   response.element.classList.add('is-active');
-  var stepData = response.element.getAttribute('data-step');
-  map.flyTo(positions[stepData]);
-
-  // if (response.element.id === 'boxi') {
-  //
-  //   map.setLayoutProperty('popularTimes', 'visibility', 'visible');
-  //
-  // } else {
-  //   map.setLayoutProperty('popularTimes', 'visibility', 'none');
-  // }
-
-
-  map.setLayoutProperty(stepData, 'visibility', 'visible');
+  // fly to position
+  if (response.element.hasAttribute('data-step')) {
+    let dataStep = response.element.getAttribute('data-step');
+    map.flyTo(positions[dataStep]);
+  }
+  // show map layers
+  if (response.element.hasAttribute('map-layer')) {
+    let mapLayer = response.element.getAttribute('map-layer');
+    toggleLayerTo(mapLayer, 1);
+  }
 
 }
 
-
-
-
 function handleStepProgress(progress) {
-  let stepProgress = progress.progress;
-  // updatePopularTimesMarkers(map, stepProgress);
+  // let stepProgress = progress.progress;
 }
 
 function handleStepExit(response) {
   // response = { element, direction, index }
   response.element.classList.remove('is-active');
-
-  map.setLayoutProperty(response.element.getAttribute('data-step'), 'visibility', 'none');
+  let dataStep = response.element.getAttribute('data-step');
+  toggleLayerTo(dataStep, 0);
 }
 
 function init() {

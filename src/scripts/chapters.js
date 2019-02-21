@@ -1,44 +1,54 @@
 let positions = {
-  'boxi': {
-    duration: 3000,
+  'ownershiptoday': {
+    duration: 1000,
     bearing: 0,
-    center: [13.459474, 52.510534],
-    zoom: 17,
-    pitch: 30
+    center: [13.460, 52.511],
+    zoom: 16.5,
+    pitch: 0
   },
   'boxifern': {
-    duration: 3000,
+    duration: 1000,
     center: [13.455374, 52.510885],
     bearing: 0,
     zoom: 16,
     pitch: 10
   },
   'berlin': {
-    duration: 3000,
+    duration: 50,
     center: [13.445701, 52.508792],
     bearing: 0,
     zoom: 13,
     pitch: 0
   },
   'ddr-map': {
-    duration: 3000,
+    duration: 300,
     bearing: 0,
     center: [13.459, 52.511],
     zoom: 14,
+    speed: 0.2,
     pitch: 0
   },
   'vorwerk-boxhagen': {
-    duration: 3000,
+    duration: 300,
     center: [13.468, 52.508],
+    speed: 0.2,
     bearing: 0,
-    zoom: 15,
+    zoom: 16,
     pitch: 0
   },
   'straubemap': {
-    duration: 3000,
+    duration: 300,
     center: [13.460, 52.511],
     bearing: 0,
+    speed: 0.2,
     zoom: 16,
+    pitch: 0
+  },
+  'world': {
+    duration: 300,
+    center: [71.135, 41.040],
+    bearing: 0,
+    zoom: 1.36,
     pitch: 0
   }
 };

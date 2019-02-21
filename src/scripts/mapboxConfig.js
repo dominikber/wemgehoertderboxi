@@ -8,7 +8,7 @@ var map = new mapboxgl.Map({
   center: [13.468, 52.508],
   zoom: 15,
   bearing: 0,
-  pitch: 30,
+  pitch: 0,
   attributionControl: false
 });
 
