@@ -140,6 +140,45 @@ h3 {
   height: 300px;
 }
 
+.owl-nav {
+  .owl-prev {
+    left: -5%;
+    top: 50%;
+    position: absolute;
+
+    span {
+      font-size: 60px;
+    }
+  }
+
+  .owl-next {
+    right: -5%;
+    top: 50%;
+    position: absolute;
+
+    span {
+      font-size: 60px;
+    }
+  }
+}
+
+.fassadenCol {
+  text-align: center;
+
+  img {
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.fassadenTable {
+  tbody tr th {
+    width: 33.3%;
+  }
+}
+
 section.is-active {
   opacity: 1;
   transition: opacity 0.3 ease;

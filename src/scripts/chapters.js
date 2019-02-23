@@ -14,7 +14,7 @@ let positions = {
     pitch: 10
   },
   'berlin': {
-    duration: 50,
+    duration: 1000,
     center: [13.445701, 52.508792],
     bearing: 0,
     zoom: 13,
@@ -46,9 +46,9 @@ let positions = {
   },
   'world': {
     duration: 1000,
-    center: [71.135, 41.040],
+    center: [34.827, 38.050],
     bearing: 0,
-    zoom: 1.36,
+    zoom: 1.38,
     pitch: 0
   }
 };
