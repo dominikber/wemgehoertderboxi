@@ -39,7 +39,7 @@
     "gewerbeart_2019": "Bar Friseur"
   },
   {
-    "house_id": 3,
+    "house_id": 4,
     "owner_2008": "unbekannt",
     "ownership_category 2019": "Private Owner",
     "owner_2019": "3 Privatpersonen",
@@ -52,7 +52,7 @@
     "gewerbeart_2019": "Veganes Restaurant"
   },
   {
-    "house_id": 4,
+    "house_id": 5,
     "owner_2008": "unbekannt",
     "ownership_category 2019": "Private Owner",
     "owner_2019": "9 Privatpersonen",
@@ -65,7 +65,7 @@
     "gewerbeart_2019": "Restaurant Bekleidungsgeschäft"
   },
   {
-    "house_id": 5,
+    "house_id": 6,
     "owner_2008": "unbekannt",
     "ownership_category 2019": "GmbH",
     "owner_2019": "GmbH",
@@ -78,7 +78,7 @@
     "gewerbeart_2019": "Restaurant Bar Kraft Beer Bar"
   },
   {
-    "house_id": 6,
+    "house_id": 7,
     "owner_2008": "unbekannt",
     "ownership_category 2019": "Private Owner",
     "owner_2019": "1 Privatperson",
@@ -91,7 +91,7 @@
     "gewerbeart_2019": "Boxi Kiosk Restaurant Café"
   },
   {
-    "house_id": 7,
+    "house_id": 8,
     "owner_2008": "unbekannt",
     "ownership_category 2019": "GbR",
     "owner_2019": "GbR",
@@ -104,7 +104,7 @@
     "gewerbeart_2019": "Konditorei Einrichtungsgeschäft"
   },
   {
-    "house_id": 8,
+    "house_id": 9,
     "owner_2008": "unbekannt",
     "ownership_category 2019": "GbR",
     "owner_2019": "GbR",
@@ -117,7 +117,7 @@
     "gewerbeart_2019": "Restaurant Bar"
   },
   {
-    "house_id": 9,
+    "house_id": 10,
     "owner_2008": "unbekannt",
     "ownership_category 2019": "Private Owner",
     "owner_2019": "6 Privatpersonen",
@@ -130,7 +130,7 @@
     "gewerbeart_2019": "Concept Store 2 Bekleidungsgeschäfte"
   },
   {
-    "house_id": "",
+    "house_id": 11,
     "owner_2008": "unbekannt",
     "ownership_category 2019": "Private Owner",
     "owner_2019": "2 Privatpersonen",
@@ -143,7 +143,7 @@
     "gewerbeart_2019": "Café & Bäckerei Spielwaren Taschengeschäft"
   },
   {
-    "house_id": "",
+    "house_id": 12,
     "owner_2008": "unbekannt",
     "ownership_category 2019": "Private Owner",
     "owner_2019": "1 Privatperson",
@@ -156,7 +156,7 @@
     "gewerbeart_2019": "Kneippe Plattengeschäft Leerstand Kinderkleidung"
   },
   {
-    "house_id": "",
+    "house_id": 13,
     "owner_2008": "unbekannt",
     "ownership_category 2019": "Private Owner",
     "owner_2019": "2 Privatpersonen",
@@ -169,7 +169,7 @@
     "gewerbeart_2019": "Fahrradgeschäft Bekleidungsgeschäft"
   },
   {
-    "house_id": "",
+    "house_id": 14,
     "owner_2008": "unbekannt",
     "ownership_category 2019": "WEG",
     "owner_2019": "WEG",
@@ -182,7 +182,7 @@
     "gewerbeart_2019": "Kiezladen Imbiss"
   },
   {
-    "house_id": "",
+    "house_id": 15,
     "owner_2008": "unbekannt",
     "ownership_category 2019": "GmbH",
     "owner_2019": "GmbH",
@@ -195,7 +195,7 @@
     "gewerbeart_2019": "2 Imbisse"
   },
   {
-    "house_id": "",
+    "house_id": 16,
     "owner_2008": "unbekannt",
     "ownership_category 2019": "GmbH",
     "owner_2019": "GmbH",
@@ -208,7 +208,7 @@
     "gewerbeart_2019": "Bar"
   },
   {
-    "house_id": "",
+    "house_id": 17,
     "owner_2008": "unbekannt",
     "ownership_category 2019": "Private Owner",
     "owner_2019": "1 Privatperson",
@@ -221,7 +221,7 @@
     "gewerbeart_2019": "Bar 2 Restaurant"
   },
   {
-    "house_id": "",
+    "house_id": 18,
     "owner_2008": "unbekannt",
     "ownership_category 2019": "WEG",
     "owner_2019": "WEG",
@@ -234,7 +234,7 @@
     "gewerbeart_2019": "Tischlerei Café Bekleidungsgeschäft Brillengeschäft"
   },
   {
-    "house_id": "",
+    "house_id": 19,
     "owner_2008": "unbekannt",
     "ownership_category 2019": "GmbH",
     "owner_2019": "GmbH",
@@ -247,7 +247,7 @@
     "gewerbeart_2019": "3 Restaurant Eisdiele Imbiss"
   },
   {
-    "house_id": "",
+    "house_id": 20,
     "owner_2008": "unbekannt",
     "ownership_category 2019": "GmbH",
     "owner_2019": "GmbH",
@@ -260,7 +260,7 @@
     "gewerbeart_2019": "Bar Imbiss"
   },
   {
-    "house_id": "",
+    "house_id": 21,
     "owner_2008": "unbekannt",
     "ownership_category 2019": "Private Owner",
     "owner_2019": "1 Privatperson",
@@ -273,7 +273,7 @@
     "gewerbeart_2019": "Café Spätkauf Café Bar"
   },
   {
-    "house_id": "",
+    "house_id": 22,
     "owner_2008": "unbekannt",
     "ownership_category 2019": "WEG",
     "owner_2019": "WEG",
@@ -286,7 +286,7 @@
     "gewerbeart_2019": "Restaurant Imbiss Bar"
   },
   {
-    "house_id": "",
+    "house_id": 23,
     "owner_2008": "unbekannt",
     "ownership_category 2019": "WEG",
     "owner_2019": "WEG",
