@@ -1,8 +1,3 @@
-function addFassade(house_id) {
-  // static/images/fassade1.jpg
-  // static/images/fassade2.jpg
-}
-
 function addTable(fassade) {
 
   const getValuesOfArray = object => {
@@ -14,7 +9,7 @@ function addTable(fassade) {
       } else {
         return value
       }
-    })
+    });
   }
 
   console.log(fassade, 'fassade from top')
@@ -26,7 +21,7 @@ function addTable(fassade) {
     <div class="col fassadenCol">
       <h4>2019</h4>
       <img class="owl-lazy" data-src="static/images/fassaden/fassade2.jpg" /></div>
-  </div> <table class="table table-striped text-center fassadenTable pt-2">
+  </div> <table class="table table-striped text-center fassadenTable mt-2">
     <tbody>
       <tr>
         <th scope="row">${fassade.owner_2008}</th>
