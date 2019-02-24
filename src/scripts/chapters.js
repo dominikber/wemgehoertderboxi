@@ -50,7 +50,22 @@ let positions = {
     bearing: 0,
     zoom: 1.38,
     pitch: 0
+  },
+  'grueni': {
+    duration: 1000,
+    center: [13.460, 52.511],
+    bearing: 0,
+    zoom: 16.91,
+    pitch: 0
+  },
+  'geartner': {
+    duration: 1000,
+    center: [13.461, 52.511],
+    bearing: 0,
+    zoom: 17.59,
+    pitch: 0
   }
+
 };
 
 

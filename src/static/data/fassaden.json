@@ -23,7 +23,7 @@
     "sanierung_2008": "False",
     "sanierung_2019": "False",
     "gewerbeart_2008": "Imbiss",
-    "gewerbeart_2019": "Imbiss Café"
+    "gewerbeart_2019": "Imbiss, Café"
   },
   {
     "house_id": 3,
@@ -35,8 +35,8 @@
     "dach_2019": "True",
     "sanierung_2008": "",
     "sanierung_2019": "True",
-    "gewerbeart_2008": "Bar Friseur",
-    "gewerbeart_2019": "Bar Friseur"
+    "gewerbeart_2008": "Bar, Friseur",
+    "gewerbeart_2019": "Bar, Friseur"
   },
   {
     "house_id": 4,
@@ -49,7 +49,7 @@
     "sanierung_2008": "True",
     "sanierung_2019": "False",
     "gewerbeart_2008": "Pizzeria",
-    "gewerbeart_2019": "Veganes Restaurant"
+    "gewerbeart_2019": "Veganes, Restaurant"
   },
   {
     "house_id": 5,
@@ -62,7 +62,7 @@
     "sanierung_2008": "True",
     "sanierung_2019": "False",
     "gewerbeart_2008": "Restaurant",
-    "gewerbeart_2019": "Restaurant Bekleidungsgeschäft"
+    "gewerbeart_2019": "Restaurant, Bekleidungsgeschäft"
   },
   {
     "house_id": 6,
@@ -74,8 +74,8 @@
     "dach_2019": "False",
     "sanierung_2008": "True",
     "sanierung_2019": "False",
-    "gewerbeart_2008": "Restaurant Fachgeschäft",
-    "gewerbeart_2019": "Restaurant Bar Kraft Beer Bar"
+    "gewerbeart_2008": "Restaurant, Fachgeschäft",
+    "gewerbeart_2019": "Restaurant, Bar, Kraft-Beer Bar"
   },
   {
     "house_id": 7,
@@ -87,8 +87,8 @@
     "dach_2019": "True",
     "sanierung_2008": "True",
     "sanierung_2019": "False",
-    "gewerbeart_2008": "Boxi Kiosk Internet Café",
-    "gewerbeart_2019": "Boxi Kiosk Restaurant Café"
+    "gewerbeart_2008": "Spätkauf, Internet Café",
+    "gewerbeart_2019": "Spätkauf, Restaurant, Café"
   },
   {
     "house_id": 8,
@@ -101,7 +101,7 @@
     "sanierung_2008": "",
     "sanierung_2019": "True",
     "gewerbeart_2008": "",
-    "gewerbeart_2019": "Konditorei Einrichtungsgeschäft"
+    "gewerbeart_2019": "Konditorei, Einrichtungsgeschäft"
   },
   {
     "house_id": 9,
@@ -113,8 +113,8 @@
     "dach_2019": "True",
     "sanierung_2008": "True",
     "sanierung_2019": "True",
-    "gewerbeart_2008": "Souvenir Laden",
-    "gewerbeart_2019": "Restaurant Bar"
+    "gewerbeart_2008": "Souvenir-Laden",
+    "gewerbeart_2019": "Restaurant, Bar"
   },
   {
     "house_id": 10,
@@ -126,8 +126,8 @@
     "dach_2019": "False",
     "sanierung_2008": "True",
     "sanierung_2019": "False",
-    "gewerbeart_2008": "Restaurant Drogerie",
-    "gewerbeart_2019": "Concept Store 2 Bekleidungsgeschäfte"
+    "gewerbeart_2008": "Restaurant, Drogerie",
+    "gewerbeart_2019": "Concept Store, 2 Bekleidungsgeschäfte"
   },
   {
     "house_id": 11,
@@ -139,8 +139,8 @@
     "dach_2019": "True",
     "sanierung_2008": "True",
     "sanierung_2019": "False",
-    "gewerbeart_2008": "Café & Bäckerei Glaserei",
-    "gewerbeart_2019": "Café & Bäckerei Spielwaren Taschengeschäft"
+    "gewerbeart_2008": "Café & Bäckerei, Glaserei",
+    "gewerbeart_2019": "Café & Bäckerei, Spielwaren, Taschengeschäft"
   },
   {
     "house_id": 12,
@@ -152,8 +152,8 @@
     "dach_2019": "False",
     "sanierung_2008": "True",
     "sanierung_2019": "False",
-    "gewerbeart_2008": "Kneippe Bekleidungsgeschäft",
-    "gewerbeart_2019": "Kneippe Plattengeschäft Leerstand Kinderkleidung"
+    "gewerbeart_2008": "Kneippe, Bekleidungsgeschäft",
+    "gewerbeart_2019": "Kneippe, Plattengeschäft, Leerstand, Kinderkleidung"
   },
   {
     "house_id": 13,
@@ -165,8 +165,8 @@
     "dach_2019": "False",
     "sanierung_2008": "False",
     "sanierung_2019": "True",
-    "gewerbeart_2008": "Galerie & Laden Café Comicgeschäft",
-    "gewerbeart_2019": "Fahrradgeschäft Bekleidungsgeschäft"
+    "gewerbeart_2008": "Galerie & Laden, Café, Comicgeschäft",
+    "gewerbeart_2019": "Fahrradgeschäft, Bekleidungsgeschäft"
   },
   {
     "house_id": 14,
@@ -179,7 +179,7 @@
     "sanierung_2008": "False",
     "sanierung_2019": "True",
     "gewerbeart_2008": "Service und Fachhandel",
-    "gewerbeart_2019": "Kiezladen Imbiss"
+    "gewerbeart_2019": "Kiezladen, Imbiss"
   },
   {
     "house_id": 15,
@@ -191,7 +191,7 @@
     "dach_2019": "False",
     "sanierung_2008": "True",
     "sanierung_2019": "False",
-    "gewerbeart_2008": "Imbiss Bäckerei Spätkauf",
+    "gewerbeart_2008": "Imbiss, Bäckerei, Spätkauf",
     "gewerbeart_2019": "2 Imbisse"
   },
   {
@@ -204,7 +204,7 @@
     "dach_2019": "True",
     "sanierung_2008": "True",
     "sanierung_2019": "True",
-    "gewerbeart_2008": "Fachgeschäft für Fairen Handel Café",
+    "gewerbeart_2008": "Weltladen, Café",
     "gewerbeart_2019": "Bar"
   },
   {
@@ -218,7 +218,7 @@
     "sanierung_2008": "False",
     "sanierung_2019": "False",
     "gewerbeart_2008": "Shisha Bar",
-    "gewerbeart_2019": "Bar 2 Restaurant"
+    "gewerbeart_2019": "Bar, 2 Restaurant"
   },
   {
     "house_id": 18,
@@ -230,8 +230,8 @@
     "dach_2019": "True",
     "sanierung_2008": "True",
     "sanierung_2019": "False",
-    "gewerbeart_2008": "Tischlerei Gastronomie",
-    "gewerbeart_2019": "Tischlerei Café Bekleidungsgeschäft Brillengeschäft"
+    "gewerbeart_2008": "Tischlerei, Gastronomie",
+    "gewerbeart_2019": "Tischlerei, Café, Bekleidungsgeschäft, Brillengeschäft"
   },
   {
     "house_id": 19,
@@ -243,8 +243,8 @@
     "dach_2019": "True",
     "sanierung_2008": "",
     "sanierung_2019": "False",
-    "gewerbeart_2008": "Bar Gatronomie",
-    "gewerbeart_2019": "3 Restaurant Eisdiele Imbiss"
+    "gewerbeart_2008": "Bar, Gatronomie",
+    "gewerbeart_2019": "3 Restaurant, Eisdiele, Imbiss"
   },
   {
     "house_id": 20,
@@ -256,8 +256,8 @@
     "dach_2019": "True",
     "sanierung_2008": "False",
     "sanierung_2019": "False",
-    "gewerbeart_2008": "Restaurant Imbiss",
-    "gewerbeart_2019": "Bar Imbiss"
+    "gewerbeart_2008": "Restaurant, Imbiss",
+    "gewerbeart_2019": "Bar, Imbiss"
   },
   {
     "house_id": 21,
@@ -269,8 +269,8 @@
     "dach_2019": "True",
     "sanierung_2008": "False",
     "sanierung_2019": "True",
-    "gewerbeart_2008": "Bar Créperie",
-    "gewerbeart_2019": "Café Spätkauf Café Bar"
+    "gewerbeart_2008": "Bar, Créperie",
+    "gewerbeart_2019": "Café, Spätkauf, Café, Bar"
   },
   {
     "house_id": 22,
@@ -283,7 +283,7 @@
     "sanierung_2008": "True",
     "sanierung_2019": "False",
     "gewerbeart_2008": "",
-    "gewerbeart_2019": "Restaurant Imbiss Bar"
+    "gewerbeart_2019": "Restaurant, Imbiss, Bar"
   },
   {
     "house_id": 23,

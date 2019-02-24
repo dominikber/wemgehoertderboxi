@@ -78,12 +78,17 @@ h3 {
   color: $featurecolor;
 }
 
+.nav-link {
+  color: #000 !important;
+}
+
 .nav-item {
   font-family: $headline-font;
+  color: #000;
 
   a {
     text-transform: uppercase;
-    color: $darkcolor;
+    color: #000;
   }
 
   a.nav-link:focus,
@@ -183,9 +188,22 @@ h3 {
 }
 
 .fassadenTable {
-  tbody tr th {
+  max-width: 90%;
+  margin: 0 auto;
+
+  tbody tr td {
     width: 33.3%;
   }
+}
+
+.true {
+  height: 15px;
+  width: 15px;
+}
+
+.false {
+  height: 15px;
+  width: 15px;
 }
 
 .outro {
@@ -195,6 +213,15 @@ h3 {
 
 .sources {
   font-size: 0.9rem;
+
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: $featurecolor;
+  }
 }
 
 .rotate {

@@ -30,7 +30,7 @@ const steps = text.querySelectorAll('.step');
 const scroller = scrollama();
 
 let fotoLayers = ["straubemap", "vorwerk-boxhagen", "ddr-map"];
-let mapLayers = ["world"];
+let mapLayers = ["world", "verschiedene", "landberlin", "gbr", "Gmbh", "privatbesitzer", "padoamboxi", "geartner", "grueni"];
 let circleLayers = ["padovicz"];
 let initLayer = "vorwerk-boxhagen";
 
@@ -60,6 +60,13 @@ function handleStepEnter(response) {
     toggleLayerTo(mapLayer, 1);
   }
 
+  if (response.element.hasAttribute('besitzer')) {
+    let besitzerlayer = ["verschiedene", "landberlin", "gbr", "Gmbh", "privatbesitzer"];
+    for (let types of besitzerlayer) {
+      toggleLayerTo(types, 1);
+    }
+  }
+
 }
 
 function handleStepProgress(progress) {
@@ -69,8 +76,18 @@ function handleStepProgress(progress) {
 function handleStepExit(response) {
   // response = { element, direction, index }
   response.element.classList.remove('is-active');
-  let dataStep = response.element.getAttribute('map-position');
-  toggleLayerTo(dataStep, 0);
+  if (response.element.hasAttribute('map-layer')) {
+    let mapLayer = response.element.getAttribute('map-layer');
+    toggleLayerTo(mapLayer, 0);
+  }
+
+
+  if (response.element.hasAttribute('besitzer')) {
+    let besitzerlayer = ["verschiedene", "landberlin", "gbr", "Gmbh", "privatbesitzer"];
+    for (let types of besitzerlayer) {
+      toggleLayerTo(types, 0);
+    }
+  }
 }
 
 function init() {

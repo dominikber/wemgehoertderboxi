@@ -1,19 +1,5 @@
 function addTable(fassade) {
 
-  const getValuesOfArray = object => {
-    return Object.values(object).map(value => {
-      if (value === true) {
-        return value = '<i>Yes</i>'
-      } else if (value === false) {
-        return value = '<i>No</i>'
-      } else {
-        return value
-      }
-    });
-  }
-
-  console.log(fassade, 'fassade from top')
-
   return `<div class="slide"><div class="row">
     <div class="col fassadenCol">
       <h4>2008</h4>
@@ -24,29 +10,28 @@ function addTable(fassade) {
   </div> <table class="table table-striped text-center fassadenTable mt-2">
     <tbody>
       <tr>
-        <th scope="row">${fassade.owner_2008}</th>
-        <td>Besitzerart</td>
+        <td scope="row">${fassade.owner_2008}<div class="true"></div></td>
+        <td><strong>Besitzerart</strong></td>
         <td>${fassade.owner_2019}</td>
       </tr>
       <tr>
-        <th scope="row">${fassade.dach_2008}</th>
-        <th>Dachausbau</th>
-        <th>${fassade.dach_2019}</th>
+        <td scope="row">${fassade.dach_2008}</td>
+        <td><strong>Dachausbau</strong></td>
+        <td>${fassade.dach_2019}</td>
       </tr>
       <tr>
-        <th scope="row">${fassade.sanierung_2008}</th>
-        <td>Sanierung</td>
+        <td scope="row">${fassade.sanierung_2008}</td>
+        <td><strong>Sanierung</strong></td>
         <td>${fassade.sanierung_2019}</td>
       </tr>
       <tr>
-        <th scope="row">${fassade.gewerbeart_2008}</th>
-        <td>Gewerbeart</td>
+        <td scope="row">${fassade.gewerbeart_2008}</td>
+        <td><strong>Gewerbeart</strong></td>
         <td>${fassade.gewerbeart_2019}</td>
       </tr>
     </tbody>
   </table></div>`;
-}
-
+};
 
 function renderSlides(fassadenData) {
 
