@@ -5,6 +5,18 @@ function addFassade(house_id) {
 
 function addTable(fassade) {
 
+  const getValuesOfArray = object => {
+    return Object.values(object).map(value => {
+      if (value === true) {
+        return value = '<i>Yes</i>'
+      } else if (value === false) {
+        return value = '<i>No</i>'
+      } else {
+        return value
+      }
+    })
+  }
+
   console.log(fassade, 'fassade from top')
 
   return `<div class="slide"><div class="row">
@@ -43,9 +55,9 @@ function addTable(fassade) {
 
 function renderSlides(fassadenData) {
 
-  console.log(fassadenData)
+  console.log(fassadenData);
   let slides = '';
-  for(let fassade in fassadenData) {
+  for (let fassade of fassadenData) {
     let table = addTable(fassade);
     slides += table;
   }

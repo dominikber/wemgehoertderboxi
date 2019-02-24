@@ -22,12 +22,12 @@ import {
 console.log('Wem gehört der Boxi!');
 
 
-var container = document.querySelector('#scroll');
-var text = container.querySelector('.scroll__text');
-var steps = text.querySelectorAll('.step');
+const container = document.querySelector('#scroll');
+const text = container.querySelector('.scroll__text');
+const steps = text.querySelectorAll('.step');
 
 // initialize the scrollama
-var scroller = scrollama();
+const scroller = scrollama();
 
 let fotoLayers = ["straubemap", "vorwerk-boxhagen", "ddr-map"];
 let mapLayers = ["world"];
