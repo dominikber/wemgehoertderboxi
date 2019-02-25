@@ -2,9 +2,10 @@
 $copytext-font: 'ff-real-text-pro, sans-serif;'; **/
 $darkcolor: rgba(0, 0, 0, 1);
 $featurecolor: #ffb300;
-$headline-font: 'Barlow', sans-serif;
-$copytext-font: 'Poppins', serif;
+$headline-font: 'Lato', sans-serif;
+$copytext-font: 'Roboto Slab', serif;
 $bold-font: 900;
+$semibold-font: 700;
 
 body,
 html {
@@ -13,8 +14,22 @@ html {
   width: 100%;
   height: 100%;
   font-family: $copytext-font;
-  font-size: 1.02rem;
-  line-height: 1.8rem;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  -moz-hyphens: auto;
+  -o-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+h1 {
+  font-weight: $bold-font;
+  -moz-hyphens: none;
+  -o-hyphens: none;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
 }
 
 h1,
@@ -114,7 +129,7 @@ h3 {
 
 .step {
   transition: padding 0.5s ease;
-  padding: 8% 2.5%;
+  padding: 8% 4.8%;
   margin: 0;
   transition: opacity 0.3 ease;
   width: 35%;
@@ -134,11 +149,23 @@ h3 {
   background-color: #fff;
 }
 
+.fullwidth_video {
+  width: 100%;
+  background-color: rgba(0,0,0,0.25);
+}
+
 .intro {
   max-width: 70%;
   background-color: none;
-  padding: 10% 0;
-  margin-top: 87px;
+  padding: 12% 0;
+  margin-top: 50px;
+}
+
+.background-video {
+  position: absolute;
+  z-index: -10;
+  background: none!important;
+  width: 100%;
 }
 
 .container {
@@ -153,27 +180,42 @@ h3 {
 
 .owl-nav {
   .owl-prev {
-    left: -5%;
+    left: -7%;
     top: 50%;
     position: absolute;
-    background-size: cover!important;
     width: 35px!important;
     height: 103.5px!important;
-    // background: url("./static/images/arrow.png") cover!important;
+    outline: none;
+    background-repeat: no-repeat!important;
+    background-size: contain!important;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='35.628' height='103.959' viewBox='0 0 35.628 103.959'%3E%3Cpath id='Pfad_95' data-name='Pfad 95' d='M6009.981,8046.648l33.594,51.918-33.594,50.948' transform='translate(6044.77 8150.064) rotate(180)' fill='none' stroke='%23000' stroke-width='2'/%3E%3C/svg%3E")!important;
+
     span {
-      font-size: 80px;
+      display: none;
     }
   }
 
   .owl-next {
-    right: -5%;
+    right: -7%;
     top: 50%;
     position: absolute;
+    color: transparent;
+    width: 35px!important;
+    height: 103.5px!important;
+    background-repeat: no-repeat!important;
+    background-size: contain!important;
+    outline: none;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='35.628' height='103.959' viewBox='0 0 35.628 103.959'%3E%3Cpath id='Pfad_94' data-name='Pfad 94' d='M6009.981,8046.648l33.594,51.918-33.594,50.948' transform='translate(-6009.142 -8046.105)' fill='none' stroke='%23000' stroke-width='2'/%3E%3C/svg%3E")!important;
 
     span {
-      font-size: 80px;
+      display: none;
     }
   }
+  opacity: 1;
+}
+
+.owl-nav:hover {
+  opacity: 0.5;
 }
 
 .fassadenCol {
@@ -199,11 +241,18 @@ h3 {
 .true {
   height: 15px;
   width: 15px;
+  margin: 7px auto 0;
+  background-size: contain;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='29.104' height='29.104' viewBox='0 0 29.104 29.104'%3E%3Cg id='Gruppe_48' data-name='Gruppe 48' transform='translate(-790.388 -7455.189)'%3E%3Cpath id='Pfad_42' data-name='Pfad 42' d='M4477.095,12338.066l18.171,18.171,9.518,9.518' transform='translate(-3686 -4882.17)' fill='none' stroke='%23000' stroke-width='2'/%3E%3Cpath id='Pfad_43' data-name='Pfad 43' d='M0,0,18.171,18.17l9.518,9.519' transform='translate(818.785 7455.896) rotate(90)' fill='none' stroke='%23000' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .false {
   height: 15px;
   width: 15px;
+  margin: 7px auto 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30.099' height='36.908' viewBox='0 0 30.099 36.908'%3E%3Cpath id='Pfad_97' data-name='Pfad 97' d='M4589.482,12345.307l11.118,14.383,17.295-34.59' transform='translate(-4588.691 -12324.652)' fill='none' stroke='%23000' stroke-width='2'/%3E%3C/svg%3E");
 }
 
 .outro {
@@ -254,13 +303,21 @@ h3 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 30%;
+    height: 35%;
   }
 
   .step {
     margin: 20% 2.5%;
     padding: 0;
     width: 100%;
+  }
+
+  #scroll {
+    height: 65%;
+    bottom: 0;
+    left: 0;
+    overflow: scroll;
+    position: fixed;
   }
 }
 @media all and (max-width: 768px) {}

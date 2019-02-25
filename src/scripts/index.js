@@ -21,7 +21,6 @@ import {
 } from './fassaden.js';
 console.log('Wem gehört der Boxi!');
 
-
 const container = document.querySelector('#scroll');
 const text = container.querySelector('.scroll__text');
 const steps = text.querySelectorAll('.step');

@@ -1,5 +1,13 @@
 function addTable(fassade) {
 
+  const trueFalsConverter = object => {
+    if (object) {
+      return '<div class="true"></div>'
+    } else {
+      return '<div class="false"></div>'
+    }
+  }
+
   return `<div class="slide"><div class="row">
     <div class="col fassadenCol">
       <h4>2008</h4>
@@ -10,19 +18,19 @@ function addTable(fassade) {
   </div> <table class="table table-striped text-center fassadenTable mt-2">
     <tbody>
       <tr>
-        <td scope="row">${fassade.owner_2008}<div class="true"></div></td>
+        <td scope="row">${fassade.owner_2008}</td>
         <td><strong>Besitzerart</strong></td>
         <td>${fassade.owner_2019}</td>
       </tr>
       <tr>
-        <td scope="row">${fassade.dach_2008}</td>
+        <td scope="row">${trueFalsConverter(fassade.dach_2008)}</td>
         <td><strong>Dachausbau</strong></td>
-        <td>${fassade.dach_2019}</td>
+      <td>${trueFalsConverter(fassade.dach_2019)}</td>
       </tr>
       <tr>
-        <td scope="row">${fassade.sanierung_2008}</td>
+        <td scope="row">${trueFalsConverter(fassade.sanierung_2008)}</td>
         <td><strong>Sanierung</strong></td>
-        <td>${fassade.sanierung_2019}</td>
+      <td>${trueFalsConverter(fassade.sanierung_2019)}</td>
       </tr>
       <tr>
         <td scope="row">${fassade.gewerbeart_2008}</td>
