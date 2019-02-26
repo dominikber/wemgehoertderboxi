@@ -11,11 +11,11 @@ function addTable(fassade) {
   return `<div class="slide"><div class="row">
     <div class="col fassadenCol">
       <h4>2008</h4>
-      <img class="owl-lazy" data-src="static/images/fassaden/fassade1.jpg" /></div>
+      <img class="owl-lazy" data-src="static/images/fassaden/${fassade.house_id}-2008.jpg" /></div>
     <div class="col fassadenCol">
       <h4>2019</h4>
-      <img class="owl-lazy" data-src="static/images/fassaden/fassade2.jpg" /></div>
-  </div> <table class="table table-striped text-center fassadenTable mt-2">
+      <img class="owl-lazy" data-src="static/images/fassaden/${fassade.house_id}-2019.jpg" /></div>
+  </div> <table class="table table-striped text-center fassadenTable mt-3">
     <tbody>
       <tr>
         <td scope="row">${fassade.owner_2008}</td>
@@ -49,7 +49,7 @@ function renderSlides(fassadenData) {
     let table = addTable(fassade);
     slides += table;
   }
-return `${slides}`;
+  return `${slides}`;
 }
 
 
