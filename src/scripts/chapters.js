@@ -23,17 +23,25 @@ let positions = {
   'ddr-map': {
     duration: 1000,
     bearing: 0,
-    center: [13.459, 52.511],
-    zoom: 14,
+    center: [13.460, 52.511],
+    zoom: 16.08,
+    speed: 0.2,
+    pitch: 0
+  },
+  'berlin1937': {
+    duration: 1000,
+    bearing: 0,
+    center: [13.461, 52.512],
+    zoom: 14.03,
     speed: 0.2,
     pitch: 0
   },
   'vorwerk-boxhagen': {
     duration: 1000,
-    center: [13.467, 52.508],
+    center: [13.468, 52.507],
     speed: 0.2,
     bearing: 0,
-    zoom: 14.50,
+    zoom: 13.91,
     pitch: 0
   },
   'straubemap': {
@@ -42,6 +50,14 @@ let positions = {
     bearing: 0,
     speed: 0.2,
     zoom: 16,
+    pitch: 0
+  },
+  '1990': {
+    duration: 1000,
+    bearing: 0,
+    center: [13.463, 52.511],
+    zoom: 14,
+    speed: 0.2,
     pitch: 0
   },
   'world': {
