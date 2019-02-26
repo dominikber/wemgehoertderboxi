@@ -3,6 +3,7 @@ $copytext-font: 'ff-real-text-pro, sans-serif;'; **/
 $darkcolor: rgba(0, 0, 0, 1);
 $featurecolor: #ffb300;
 $headline-font: 'Lato', sans-serif;
+$headline-2-font: 'Roboto Slab', serif;
 $copytext-font: 'Roboto Slab', serif;
 $bold-font: 900;
 $semibold-font: 700;
@@ -44,6 +45,7 @@ h2 {
 
 h3 {
   padding-bottom: 1rem;
+  font-family: $headline-2-font !important;
 }
 
 p
@@ -289,7 +291,8 @@ p
   /*margin-left: 10px;*/
   text-transform: uppercase;
   font-weight: $bold-font;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
+  line-height: 2.3rem;
   font-family: $headline-font;
   /* z-index: -1; */
   /*margin-top: -130px;*/
