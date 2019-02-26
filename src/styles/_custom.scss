@@ -23,15 +23,6 @@ html {
   hyphens: auto;
 }
 
-h1 {
-  font-weight: $bold-font;
-  -moz-hyphens: none;
-  -o-hyphens: none;
-  -webkit-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-}
-
 h1,
 h2,
 h3 {
@@ -39,6 +30,11 @@ h3 {
   font-weight: $bold-font;
   font-family: $headline-font;
   padding-top: 1%;
+  -moz-hyphens: none;
+  -o-hyphens: none;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
 }
 
 h2 {
