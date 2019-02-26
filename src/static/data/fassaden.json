@@ -9,8 +9,8 @@
     "dach_2019": "False",
     "sanierung_2008": "False",
     "sanierung_2019": "False",
-    "gewerbeart_2008": "",
-    "gewerbeart_2019": ""
+    "gewerbeart_2008": "Bar",
+    "gewerbeart_2019": "Bar"
   },
   {
     "house_id": 2,
@@ -61,7 +61,7 @@
     "dach_2019": "True",
     "sanierung_2008": "",
     "sanierung_2019": "True",
-    "gewerbeart_2008": "",
+    "gewerbeart_2008": "unbekannt",
     "gewerbeart_2019": "Konditorei, Einrichtungsgeschäft"
     }
   {
@@ -101,7 +101,7 @@
     "sanierung_2008": "True",
     "sanierung_2019": "False",
     "gewerbeart_2008": "Imbiss, Bäckerei, Spätkauf",
-    "gewerbeart_2019": "2 Imbisse"
+    "gewerbeart_2019": "2x Imbiss"
   },
   {
     "house_id": 16,
