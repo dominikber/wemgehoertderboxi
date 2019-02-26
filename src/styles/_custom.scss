@@ -272,12 +272,40 @@ a:hover {
 
   a {
     color: #000;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   a:hover {
     color: $featurecolor;
+    text-decoration: underline;
   }
+}
+
+.legende {
+  position: absolute;
+  right: 30px;
+  max-width: 260px;
+  margin-top: 400px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.source {
+  position: absolute;
+  right: 0;
+  padding: 5px 10px 5px 7px;
+  background-color: #fff;
+  font-size: 0.8rem;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover {}
 }
 
 .rotate {
