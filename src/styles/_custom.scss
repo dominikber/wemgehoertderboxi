@@ -346,9 +346,13 @@ a:hover {
   z-index: 1;
   min-width: 200px;
   a {
-  color: #FFFFFF;
-  text-decoration: underline;
-}
+    color: #FFFFFF;
+    text-decoration: underline;
+  }
+ a:hover {
+    color: $featurecolor;
+    text-decoration: underline;
+  }
 }
 /* Show the tooltip text when you mouse over the tooltip container */
 .quelle:hover .quellentext {
