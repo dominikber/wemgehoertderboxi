@@ -28,7 +28,7 @@ const steps = text.querySelectorAll('.step');
 // initialize the scrollama
 const scroller = scrollama();
 
-let fotoLayers = ["straubemap", "vorwerk-boxhagen", "berlin1802", "berlin1937", "berlin1966", "ddr-map"];
+let fotoLayers = ["straubemap", "vorwerk-boxhagen", "berlin1802", "berlin1937", "berlin1966", "ddr-map", "rueckuebertragung"];
 let mapLayers = ["world", "verschiedene", "landberlin", "gbr", "Gmbh", "privatbesitzer", "padoamboxi", "geartner", "grueni"];
 let circleLayers = ["padovicz"];
 let initLayer = "vorwerk-boxhagen";

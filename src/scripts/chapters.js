@@ -55,8 +55,8 @@ let positions = {
   '1990': {
     duration: 1000,
     bearing: 0,
-    center: [13.463, 52.511],
-    zoom: 14,
+    center: [13.460, 52.511],
+    zoom: 16.10,
     speed: 0.2,
     pitch: 0
   },

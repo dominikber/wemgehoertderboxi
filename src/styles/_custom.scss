@@ -48,14 +48,14 @@ h3 {
   font-family: $headline-2-font !important;
 }
 
-p
-  a {
-    color: #000;
-    text-decoration: underline;
-  }
-  a:hover {
-    color: $featurecolor;
-  }
+p a {
+  color: #000;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: $featurecolor;
+}
 
 .strong {
   font-weight: 600;
@@ -296,6 +296,31 @@ p
   font-family: $headline-font;
   /* z-index: -1; */
   /*margin-top: -130px;*/
+}
+
+.quelle {
+  font-size: 0.7rem;
+  padding-bottom: 2px;
+  top: -.5em;
+  position: relative;
+}
+/* Tooltip text */
+.quelle .quellentext {
+  visibility: hidden;
+  background-color: black;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  line-height: 1.1rem;
+  z-index: 1;
+  min-width: 200px;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.quelle:hover .quellentext {
+  visibility: visible;
 }
 @media all and (max-width: 1199px) {}
 @media all and (max-width: 991px) {
