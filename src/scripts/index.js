@@ -42,7 +42,6 @@ function toggleLayerTo(layerName, opacity) {
     map.setPaintProperty(layerName, 'raster-opacity', opacity);
   } else if (circleLayers.includes(layerName)) {
     map.setPaintProperty(layerName, 'circle-opacity', opacity);
-    console.log("toggled circle opacity to: ", opacity);
   }
 };
 

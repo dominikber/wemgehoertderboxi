@@ -38,10 +38,10 @@ let positions = {
   },
   'vorwerk-boxhagen': {
     duration: 1000,
-    center: [13.468, 52.507],
+    center: [13.470, 52.505],
     speed: 0.2,
     bearing: 0,
-    zoom: 13.91,
+    zoom: 13.48,
     pitch: 0
   },
   'straubemap': {

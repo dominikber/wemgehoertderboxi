@@ -2,11 +2,11 @@ function addTable(fassade) {
 
   const trueFalsConverter = object => {
     if (object) {
-      return '<div class="true"></div>'
+      return '<div class="true"></div>';
     } else {
-      return '<div class="false"></div>'
+      return '<div class="false"></div>';
     }
-  }
+  };
 
   return `<div class="slide"><div class="row">
     <div class="col fassadenCol">
@@ -42,8 +42,6 @@ function addTable(fassade) {
 };
 
 function renderSlides(fassadenData) {
-
-  console.log(fassadenData);
   let slides = '';
   for (let fassade of fassadenData) {
     let table = addTable(fassade);
