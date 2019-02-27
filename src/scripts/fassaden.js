@@ -18,6 +18,11 @@ function addTable(fassade) {
   </div> <table class="table table-striped text-center fassadenTable mt-3">
     <tbody>
       <tr>
+        <td scope="row"></td>
+        <td><strong>${fassade.house_display_name}</strong></td>
+        <td></td>
+      </tr>
+      <tr>
         <td scope="row">${fassade.owner_2008}</td>
         <td><strong>Besitzerart</strong></td>
         <td>${fassade.owner_2019}</td>
