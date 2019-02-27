@@ -85,8 +85,8 @@
     "house_display_name": "Krossener Straße 22",
     "dach_2008": "False",
     "dach_2019": "",
-    "sanierung_2008": "False",
-    "sanierung_2019": "",
+    "sanierung_2008": "",
+    "sanierung_2019": "False",
     "gewerbeart_2008": "Service und Fachhandel",
     "gewerbeart_2019": "Kiezladen, Imbiss"
   },
