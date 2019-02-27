@@ -33,7 +33,7 @@
     "house_display_name": "Grünberger Straße 77",
     "dach_2008": "True",
     "dach_2019": "True",
-    "sanierung_2008": "",
+    "sanierung_2008": "True",
     "sanierung_2019": "True",
     "gewerbeart_2008": "Bar, Friseur",
     "gewerbeart_2019": "Bar, Friseur"
@@ -59,7 +59,7 @@
     "house_display_name": "Gärtner Straße 13",
     "dach_2008": "False",
     "dach_2019": "True",
-    "sanierung_2008": "",
+    "sanierung_2008": "True",
     "sanierung_2019": "True",
     "gewerbeart_2008": "unbekannt",
     "gewerbeart_2019": "Konditorei, Einrichtungsgeschäft"
