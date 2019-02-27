@@ -9,7 +9,7 @@
     "dach_2019": "False",
     "sanierung_2008": "False",
     "sanierung_2019": "False",
-    "gewerbeart_2008": "Bar",
+    "gewerbeart_2008": "?",
     "gewerbeart_2019": "Bar"
   },
   {
@@ -39,6 +39,19 @@
     "gewerbeart_2019": "Bar, Friseur"
   },
   {
+    "house_id": 4,
+    "owner_2008": "unbekannt",
+    "ownership_category 2019": "Private Owner",
+    "owner_2019": "3 Privatpersonen",
+    "house_display_name": "Grünberger Straße 79",
+    "dach_2008": "False",
+    "dach_2019": "False",
+    "sanierung_2008": "True",
+    "sanierung_2019": "False",
+    "gewerbeart_2008": "Pizzeria",
+    "gewerbeart_2019": "Veganes, Restaurant"
+  },
+  {
     "house_id": 7,
     "owner_2008": "unbekannt",
     "ownership_category 2019": "Private Owner",
@@ -61,9 +74,9 @@
     "dach_2019": "True",
     "sanierung_2008": "True",
     "sanierung_2019": "True",
-    "gewerbeart_2008": "unbekannt",
+    "gewerbeart_2008": "?",
     "gewerbeart_2019": "Konditorei, Einrichtungsgeschäft"
-    },
+},
   {
     "house_id": 13,
     "owner_2008": "unbekannt",
@@ -101,7 +114,7 @@
     "sanierung_2008": "True",
     "sanierung_2019": "False",
     "gewerbeart_2008": "Imbiss, Bäckerei, Spätkauf",
-    "gewerbeart_2019": "2x Imbiss"
+    "gewerbeart_2019": "2 Imbisse"
   },
   {
     "house_id": 16,
