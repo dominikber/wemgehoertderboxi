@@ -23,14 +23,14 @@ function addTable(fassade) {
         <td>${fassade.owner_2019}</td>
       </tr>
       <tr>
-        <td scope="row">${trueFalsConverter(fassade.dach_2008)}</td>
+        <td scope="row">${trueFalseConverter(fassade.dach_2008)}</td>
         <td><strong>Dachausbau</strong></td>
-      <td>${trueFalsConverter(fassade.dach_2019)}</td>
+      <td>${trueFalseConverter(fassade.dach_2019)}</td>
       </tr>
       <tr>
-        <td scope="row">${trueFalsConverter(fassade.sanierung_2008)}</td>
+        <td scope="row">${trueFalseConverter(fassade.sanierung_2008)}</td>
         <td><strong>Sanierung</strong></td>
-      <td>${trueFalsConverter(fassade.sanierung_2019)}</td>
+      <td>${trueFalseConverter(fassade.sanierung_2019)}</td>
       </tr>
       <tr>
         <td scope="row">${fassade.gewerbeart_2008}</td>
