@@ -63,7 +63,7 @@
     "sanierung_2019": "True",
     "gewerbeart_2008": "unbekannt",
     "gewerbeart_2019": "Konditorei, Einrichtungsgeschäft"
-    }
+    },
   {
     "house_id": 13,
     "owner_2008": "unbekannt",
@@ -115,5 +115,5 @@
     "sanierung_2019": "True",
     "gewerbeart_2008": "Weltladen, Café",
     "gewerbeart_2019": "Bar"
-  },
+  }
 ]
