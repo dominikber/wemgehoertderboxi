@@ -2,9 +2,9 @@ function addTable(fassade) {
 
   const trueFalsConverter = object => {
     if (object) {
-      return '<div class="true"></div>';
+      return '<div class="True"></div>';
     } else {
-      return '<div class="false"></div>';
+      return '<div class="False"></div>';
     }
   };
 
